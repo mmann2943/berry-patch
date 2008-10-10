@@ -1,0 +1,63 @@
+<Configuration>
+  <UnitTestRunner>
+    <CustomStartDirectory>
+    </CustomStartDirectory>
+    <UseShadowCopy>True</UseShadowCopy>
+    <UseCustomFolder>False</UseCustomFolder>
+    <EnableUnitTesting>True</EnableUnitTesting>
+    <Providers />
+  </UnitTestRunner>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="F7F891B0-7C73-4A87-965A-D3CA4858A130/d:Enums/f:Status.cs" caret="0" scrollPosition="0|0" />
+      <File id="CB4658E2-4953-498C-A69D-01A7CCD7FB89/f:AppConfigReader.cs" caret="445" scrollPosition="0|0" />
+      <File id="AB0C30E5-3CF4-464F-8E29-2BEF92994042/f:CustomerRepositoryFactory.cs" caret="394" scrollPosition="0|0" />
+      <File id="CB4658E2-4953-498C-A69D-01A7CCD7FB89/f:IConfig.cs" caret="1041" scrollPosition="0|0" />
+      <File id="07ABEF7D-B10C-4580-BA36-02AC1376A461/f:AuthenticateUser.cs" caret="1092" scrollPosition="0|21" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="07ABEF7D-B10C-4580-BA36-02AC1376A461/f:AuthenticateUser.cs" caret="352" scrollPosition="0|6" />
+      <File id="CB4658E2-4953-498C-A69D-01A7CCD7FB89/f:IConfig.cs" caret="0" scrollPosition="0|0" />
+      <File id="CB4658E2-4953-498C-A69D-01A7CCD7FB89/f:IConfig.cs" caret="197" scrollPosition="0|0" />
+      <File id="CB4658E2-4953-498C-A69D-01A7CCD7FB89/f:IConfig.cs" caret="387" scrollPosition="0|0" />
+      <File id="CB4658E2-4953-498C-A69D-01A7CCD7FB89/f:IConfig.cs" caret="467" scrollPosition="0|0" />
+      <File id="CB4658E2-4953-498C-A69D-01A7CCD7FB89/f:IConfig.cs" caret="783" scrollPosition="0|1" />
+      <File id="07ABEF7D-B10C-4580-BA36-02AC1376A461/f:AuthenticateUser.cs" caret="6324" scrollPosition="0|80" />
+      <File id="F7F891B0-7C73-4A87-965A-D3CA4858A130/d:Enums/f:Status.cs" caret="0" scrollPosition="0|0" />
+      <File id="CB4658E2-4953-498C-A69D-01A7CCD7FB89/f:IConfig.cs" caret="1120" scrollPosition="0|8" />
+      <File id="07ABEF7D-B10C-4580-BA36-02AC1376A461/f:AuthenticateUser.cs" caret="6680" scrollPosition="10|95" />
+      <File id="07ABEF7D-B10C-4580-BA36-02AC1376A461/f:AuthenticateUser.cs" caret="793" scrollPosition="3|27" />
+      <File id="AB0C30E5-3CF4-464F-8E29-2BEF92994042/f:CustomerRepositoryFactory.cs" caret="437" scrollPosition="0|0" />
+      <File id="AB0C30E5-3CF4-464F-8E29-2BEF92994042/f:CustomerRepositoryFactory.cs" caret="0" scrollPosition="0|0" />
+      <File id="07ABEF7D-B10C-4580-BA36-02AC1376A461/f:AuthenticateUser.cs" caret="4508" scrollPosition="40|64" />
+      <File id="07ABEF7D-B10C-4580-BA36-02AC1376A461/f:AuthenticateUser.cs" caret="1107" scrollPosition="0|34" />
+      <File id="07ABEF7D-B10C-4580-BA36-02AC1376A461/f:AuthenticateUser.cs" caret="2674" scrollPosition="67|35" />
+      <File id="07ABEF7D-B10C-4580-BA36-02AC1376A461/f:AuthenticateUser.cs" caret="6206" scrollPosition="57|74" />
+      <File id="07ABEF7D-B10C-4580-BA36-02AC1376A461/f:AuthenticateUser.cs" caret="6837" scrollPosition="0|105" />
+      <File id="CB4658E2-4953-498C-A69D-01A7CCD7FB89/f:AppConfigReader.cs" caret="445" scrollPosition="0|0" />
+      <File id="07ABEF7D-B10C-4580-BA36-02AC1376A461/f:AuthenticateUser.cs" caret="3489" scrollPosition="31|40" />
+    </RecentEdits>
+  </RecentFiles>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+      <setting name="UseSolutionBuilder">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="CreateMock" priority="0" />
+      <Item value="ReadValue" priority="0" />
+      <Item value="Name" priority="0" />
+      <Item value="Find" priority="1" />
+      <Item value="CreateInstance" priority="0" />
+      <Item value="GetType" priority="0" />
+      <Item value="Equals" priority="1" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="CSVImport"   
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+	<xs:element name="CSVImport">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="ImportData">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="First_Name" type="xs:string" />
+							<xs:element name="Last_Name" type="xs:string" />
+						<xs:element name="Mailing_Address" type="xs:string" />
+							<xs:element name="City" type="xs:string" />
+							<xs:element name="State" type="xs:string" />
+							<xs:element name="Zip" type="xs:unsignedShort" />
+							<xs:element name="Email" type="xs:string" />							
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

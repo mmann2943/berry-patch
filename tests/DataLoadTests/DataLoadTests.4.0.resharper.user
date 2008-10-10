@@ -1,0 +1,126 @@
+<Configuration>
+  <UnitTestRunner>
+    <CustomStartDirectory>
+    </CustomStartDirectory>
+    <UseShadowCopy>True</UseShadowCopy>
+    <UseCustomFolder>False</UseCustomFolder>
+    <EnableUnitTesting>True</EnableUnitTesting>
+    <Providers />
+  </UnitTestRunner>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="0669E5EA-EC43-402B-815A-810E84311E69/f:CsvImporter.cs" caret="3662" scrollPosition="6|75" />
+      <File id="3612EBBA-C49E-4CD1-B033-FC2C7686E63B/d:TestData/f:ImportCustomers.csv" caret="114" scrollPosition="0|0" />
+      <File id="3612EBBA-C49E-4CD1-B033-FC2C7686E63B/d:TestData/f:BadCustomerImport.csv" caret="0" scrollPosition="0|0" />
+      <File id="3612EBBA-C49E-4CD1-B033-FC2C7686E63B/f:DataLoadTests.cs" caret="3348" scrollPosition="0|56" />
+      <File id="3612EBBA-C49E-4CD1-B033-FC2C7686E63B/d:TestData/f:ImportSchema.xsd" caret="426" scrollPosition="0|0" />
+      <File id="AB0C30E5-3CF4-464F-8E29-2BEF92994042/f:CustomerRepositoryFactory.cs" caret="0" scrollPosition="0|0" />
+      <File id="AB0C30E5-3CF4-464F-8E29-2BEF92994042/f:IUser.cs" caret="58" scrollPosition="0|0" />
+      <File id="AB0C30E5-3CF4-464F-8E29-2BEF92994042/f:IUserRepository.cs" caret="828" scrollPosition="0|0" />
+      <File id="BE0F9C4A-E839-49D3-B56D-A4A1D8B43073/f:EmbeddedSqlUserRepository.cs" caret="604" scrollPosition="0|0" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="0669E5EA-EC43-402B-815A-810E84311E69/f:CsvImporter.cs" caret="3005" scrollPosition="0|53" />
+      <File id="0669E5EA-EC43-402B-815A-810E84311E69/f:CsvImporter.cs" caret="2383" scrollPosition="0|29" />
+      <File id="3612EBBA-C49E-4CD1-B033-FC2C7686E63B/d:TestData/f:ImportSchema.xsd" caret="123" scrollPosition="0|0" />
+      <File id="3612EBBA-C49E-4CD1-B033-FC2C7686E63B/d:TestData/f:ImportSchema.xsd" caret="791" scrollPosition="0|0" />
+      <File id="3612EBBA-C49E-4CD1-B033-FC2C7686E63B/d:TestData/f:ImportSchema.xsd" caret="65" scrollPosition="0|0" />
+      <File id="3612EBBA-C49E-4CD1-B033-FC2C7686E63B/d:TestData/f:ImportSchema.xsd" caret="65" scrollPosition="0|0" />
+      <File id="0669E5EA-EC43-402B-815A-810E84311E69/f:CsvImporter.cs" caret="2354" scrollPosition="0|31" />
+      <File id="3612EBBA-C49E-4CD1-B033-FC2C7686E63B/d:TestData/f:BadCustomerImport.csv" caret="56" scrollPosition="0|0" />
+      <File id="0669E5EA-EC43-402B-815A-810E84311E69/f:CsvImporter.cs" caret="2637" scrollPosition="0|31" />
+      <File id="3612EBBA-C49E-4CD1-B033-FC2C7686E63B/f:DataLoadTests.cs" caret="2376" scrollPosition="0|34" />
+      <File id="3612EBBA-C49E-4CD1-B033-FC2C7686E63B/f:DataLoadTests.cs" caret="2127" scrollPosition="0|36" />
+      <File id="0669E5EA-EC43-402B-815A-810E84311E69/f:CsvImporter.cs" caret="2072" scrollPosition="106|21" />
+      <File id="0669E5EA-EC43-402B-815A-810E84311E69/f:CsvImporter.cs" caret="565" scrollPosition="74|4" />
+      <File id="3612EBBA-C49E-4CD1-B033-FC2C7686E63B/f:DataLoadTests.cs" caret="2400" scrollPosition="0|36" />
+      <File id="3612EBBA-C49E-4CD1-B033-FC2C7686E63B/f:DataLoadTests.cs" caret="1521" scrollPosition="10|35" />
+      <File id="3612EBBA-C49E-4CD1-B033-FC2C7686E63B/d:TestData/f:ImportCustomers.csv" caret="56" scrollPosition="0|0" />
+      <File id="3612EBBA-C49E-4CD1-B033-FC2C7686E63B/f:DataLoadTests.cs" caret="3386" scrollPosition="0|59" />
+      <File id="3612EBBA-C49E-4CD1-B033-FC2C7686E63B/f:DataLoadTests.cs" caret="603" scrollPosition="0|22" />
+      <File id="3612EBBA-C49E-4CD1-B033-FC2C7686E63B/f:DataLoadTests.cs" caret="997" scrollPosition="0|22" />
+      <File id="3612EBBA-C49E-4CD1-B033-FC2C7686E63B/f:DataLoadTests.cs" caret="1262" scrollPosition="0|22" />
+      <File id="3612EBBA-C49E-4CD1-B033-FC2C7686E63B/f:DataLoadTests.cs" caret="3040" scrollPosition="0|56" />
+      <File id="3612EBBA-C49E-4CD1-B033-FC2C7686E63B/f:DataLoadTests.cs" caret="3201" scrollPosition="0|56" />
+      <File id="3612EBBA-C49E-4CD1-B033-FC2C7686E63B/d:TestData/f:ImportSchema.xsd" caret="426" scrollPosition="0|0" />
+      <File id="BE0F9C4A-E839-49D3-B56D-A4A1D8B43073/f:EmbeddedSqlUserRepository.cs" caret="141" scrollPosition="0|0" />
+      <File id="BE0F9C4A-E839-49D3-B56D-A4A1D8B43073/f:EmbeddedSqlUserRepository.cs" caret="186" scrollPosition="0|0" />
+      <File id="AB0C30E5-3CF4-464F-8E29-2BEF92994042/f:IUserRepository.cs" caret="508" scrollPosition="0|0" />
+      <File id="AB0C30E5-3CF4-464F-8E29-2BEF92994042/f:IUserRepository.cs" caret="220" scrollPosition="0|0" />
+      <File id="AB0C30E5-3CF4-464F-8E29-2BEF92994042/f:IUserRepository.cs" caret="828" scrollPosition="0|0" />
+      <File id="BE0F9C4A-E839-49D3-B56D-A4A1D8B43073/f:EmbeddedSqlUserRepository.cs" caret="308" scrollPosition="0|0" />
+      <File id="BE0F9C4A-E839-49D3-B56D-A4A1D8B43073/f:EmbeddedSqlUserRepository.cs" caret="604" scrollPosition="0|0" />
+    </RecentEdits>
+  </RecentFiles>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+      <setting name="UseSolutionBuilder">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="DataSet" priority="0" />
+      <Item value="Tables" priority="2" />
+      <Item value="Add" priority="4" />
+      <Item value="Columns" priority="0" />
+      <Item value="DataColumn" priority="2" />
+      <Item value="ColumnName" priority="1" />
+      <Item value="GetFieldHeaders" priority="0" />
+      <Item value="Count" priority="0" />
+      <Item value="Length" priority="2" />
+      <Item value="ReadNextRecord" priority="0" />
+      <Item value="Rows" priority="0" />
+      <Item value="DataRow" priority="0" />
+      <Item value="DataRowBuilder" priority="0" />
+      <Item value="XmlSchema" priority="0" />
+      <Item value="XmlSchemaSet" priority="0" />
+      <Item value="Create" priority="3" />
+      <Item value="WriteXmlSchema" priority="0" />
+      <Item value="StringWriter" priority="1" />
+      <Item value="StringBuilder" priority="3" />
+      <Item value="ToString" priority="2" />
+      <Item value="XmlSchemaValidationException" priority="3" />
+      <Item value="Message" priority="2" />
+      <Item value="_pathToBadCsv" priority="0" />
+      <Item value="_schemaFilePath" priority="1" />
+      <Item value="Initialize" priority="0" />
+      <Item value="WriteXml" priority="1" />
+      <Item value="ValidateEndElement" priority="0" />
+      <Item value="Schemas" priority="3" />
+      <Item value="XmlSchemaInfo" priority="0" />
+      <Item value="XmlValidatingReader" priority="1" />
+      <Item value="ValidationEventHandler" priority="3" />
+      <Item value="Read" priority="2" />
+      <Item value="Settings" priority="4" />
+      <Item value="XmlReaderSettings" priority="2" />
+      <Item value="ConformanceLevel" priority="0" />
+      <Item value="Document" priority="0" />
+      <Item value="ValidationType" priority="0" />
+      <Item value="Schema" priority="0" />
+      <Item value="ValidationEventArgs" priority="0" />
+      <Item value="OpenRead" priority="1" />
+      <Item value="Reprocess" priority="0" />
+      <Item value="NamespaceURI" priority="0" />
+      <Item value="SchemaInfo" priority="0" />
+      <Item value="Validity" priority="0" />
+      <Item value="XmlSchemaValidationFlags" priority="0" />
+      <Item value="Format" priority="2" />
+      <Item value="ReadXml" priority="1" />
+      <Item value="StringReader" priority="0" />
+      <Item value="IgnoreSchema" priority="0" />
+      <Item value="this" priority="0" />
+      <Item value="SchemValidationMessageFormat" priority="1" />
+      <Item value="AreNotEqual" priority="0" />
+      <Item value="CsvImporter" priority="0" />
+      <Item value="Error" priority="0" />
+      <Item value="IsTrue" priority="0" />
+      <Item value="exceptionRaised" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>

@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Authentication.Tests", "Authentication.Tests.csproj", "{07ABEF7D-B10C-4580-BA36-02AC1376A461}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BerryPatch.Security", "..\..\src\BerryPatch\BerryPatch.Security\BerryPatch.Security.csproj", "{AB0C30E5-3CF4-464F-8E29-2BEF92994042}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BerryPatch.Common", "..\..\src\BerryPatch\BerryPatch.Common\BerryPatch.Common.csproj", "{F7F891B0-7C73-4A87-965A-D3CA4858A130}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BerryPatch.Config", "..\..\src\BerryPatch\BerryPatch.Config\BerryPatch.Config.csproj", "{CB4658E2-4953-498C-A69D-01A7CCD7FB89}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataLoadTests", "..\DataLoadTests\DataLoadTests.csproj", "{3612EBBA-C49E-4CD1-B033-FC2C7686E63B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BerryPatch.DataLoad", "..\..\src\BerryPatch\BerryPatch.DataLoad\BerryPatch.DataLoad.csproj", "{0669E5EA-EC43-402B-815A-810E84311E69}"
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{07ABEF7D-B10C-4580-BA36-02AC1376A461}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07ABEF7D-B10C-4580-BA36-02AC1376A461}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07ABEF7D-B10C-4580-BA36-02AC1376A461}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07ABEF7D-B10C-4580-BA36-02AC1376A461}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB0C30E5-3CF4-464F-8E29-2BEF92994042}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB0C30E5-3CF4-464F-8E29-2BEF92994042}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB0C30E5-3CF4-464F-8E29-2BEF92994042}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB0C30E5-3CF4-464F-8E29-2BEF92994042}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7F891B0-7C73-4A87-965A-D3CA4858A130}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7F891B0-7C73-4A87-965A-D3CA4858A130}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7F891B0-7C73-4A87-965A-D3CA4858A130}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7F891B0-7C73-4A87-965A-D3CA4858A130}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB4658E2-4953-498C-A69D-01A7CCD7FB89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB4658E2-4953-498C-A69D-01A7CCD7FB89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB4658E2-4953-498C-A69D-01A7CCD7FB89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB4658E2-4953-498C-A69D-01A7CCD7FB89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3612EBBA-C49E-4CD1-B033-FC2C7686E63B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3612EBBA-C49E-4CD1-B033-FC2C7686E63B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3612EBBA-C49E-4CD1-B033-FC2C7686E63B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3612EBBA-C49E-4CD1-B033-FC2C7686E63B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0669E5EA-EC43-402B-815A-810E84311E69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0669E5EA-EC43-402B-815A-810E84311E69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0669E5EA-EC43-402B-815A-810E84311E69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0669E5EA-EC43-402B-815A-810E84311E69}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

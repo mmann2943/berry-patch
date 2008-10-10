@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataLoadTests", "DataLoadTests.csproj", "{3612EBBA-C49E-4CD1-B033-FC2C7686E63B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NuclearFamily.DataLoad", "..\..\src\NuclearFamily\NuclearFamily.DataLoad\NuclearFamily.DataLoad.csproj", "{0669E5EA-EC43-402B-815A-810E84311E69}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NuclearFamily.Security", "..\..\src\NuclearFamily\NuclearFamily.Security\NuclearFamily.Security.csproj", "{AB0C30E5-3CF4-464F-8E29-2BEF92994042}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NuclearFamily.DAL", "..\..\src\NuclearFamily\NuclearFamily.DAL\NuclearFamily.DAL.csproj", "{C90F91F7-B812-49EF-B27B-17156B6A7BEC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NuclearFamily.DataProvider", "..\..\src\NuclearFamily\NuclearFamily.DataProvider\NuclearFamily.DataProvider.csproj", "{BE0F9C4A-E839-49D3-B56D-A4A1D8B43073}"
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3612EBBA-C49E-4CD1-B033-FC2C7686E63B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3612EBBA-C49E-4CD1-B033-FC2C7686E63B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3612EBBA-C49E-4CD1-B033-FC2C7686E63B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3612EBBA-C49E-4CD1-B033-FC2C7686E63B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0669E5EA-EC43-402B-815A-810E84311E69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0669E5EA-EC43-402B-815A-810E84311E69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0669E5EA-EC43-402B-815A-810E84311E69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0669E5EA-EC43-402B-815A-810E84311E69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB0C30E5-3CF4-464F-8E29-2BEF92994042}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB0C30E5-3CF4-464F-8E29-2BEF92994042}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB0C30E5-3CF4-464F-8E29-2BEF92994042}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB0C30E5-3CF4-464F-8E29-2BEF92994042}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C90F91F7-B812-49EF-B27B-17156B6A7BEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C90F91F7-B812-49EF-B27B-17156B6A7BEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C90F91F7-B812-49EF-B27B-17156B6A7BEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C90F91F7-B812-49EF-B27B-17156B6A7BEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE0F9C4A-E839-49D3-B56D-A4A1D8B43073}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE0F9C4A-E839-49D3-B56D-A4A1D8B43073}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE0F9C4A-E839-49D3-B56D-A4A1D8B43073}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE0F9C4A-E839-49D3-B56D-A4A1D8B43073}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
