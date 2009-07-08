@@ -1,0 +1,145 @@
+body
+{
+	background-color: #FFE59E;
+	color: #000000;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	margin: 10px 10px;
+	padding: 0px;
+}
+.clear{clear:both;}
+* {
+	margin: 0px;
+	padding: 0px;
+}
+#container {
+	margin: 0px auto;
+	text-align: left;
+	width: 717px;
+}
+a{
+	font-size:12px;
+}
+p{
+	margin: 15px 0px;
+}
+/********************** Header ***************************/
+#header {
+	margin: 0px 0px 0px 0px;
+	background-image:url(/images/banner.png);
+	width:717px;
+	height:288px;
+	position:relative;
+}
+#header ul
+{
+	background-color: #47221A;
+	width: 711px;
+	border: 3px solid #FFFFFF;
+	display: block;
+	top: 255px;
+	position: absolute;
+	margin: 0px 0px 0px 0px;
+	height: 22px;
+	padding: 5px 0px 0px 0px;
+	text-align: left;
+}
+#header li{
+	display:inline;	
+}
+#header ul a{
+	text-decoration:none;
+	color:#FFFFFF;
+	margin: 0px 15px;
+}
+#header ul a:hover{
+	text-decoration:underline;
+	color:#28556b;
+}
+#logo_w1,#logo_w2 {
+	font-size: 24px;
+	font-style:italic;
+	color:#FFFFFF;
+	position:absolute;
+}
+#logo_w1{
+	top:15px;
+	left:70px;
+}
+#logo_w2{
+	top:44px;
+	left:94px;
+}
+#header_text {
+	top:90px;
+	left:43px;
+	width:230px;
+	position:absolute;
+}
+#header_text p{
+	font-size: 18px;
+	color:#FFFFFF;
+}
+#header_text a{color:#28556b;}
+#header_text a:hover{color:#c77e0c;}
+/********************** Content ***************************/
+#container
+{
+	border: medium solid #633021;
+	background-image: url(images/content_bg.gif);
+	width: 717px;
+}
+img{
+	border-width:0px;
+}
+h1{
+	color:#000000;
+	font-size:14px;
+	margin: 20px 0px 20px 0px;
+}
+
+h2{
+	color:#85a157;
+	font-size:14px;
+	text-align:center;
+	width:200px;
+	margin: 10px 0px 15px 0px;
+}
+#left {
+	float:left;
+	width:428px;
+	margin-left:27px;
+	padding: 0px 10px 30px 0px;
+	display:inline;
+}
+#left a{color:#28556b;}
+#left a:hover{color:#c77e0c;}
+#photos a{
+	margin-right:14px;
+}
+#right {
+	float:right;
+	width:210px;
+	padding: 0px 20px 20px 20px;
+	margin-top:10px;
+	border-left: #FFF 2px solid;
+
+}
+#right a{
+	color:#c77e0c;
+}
+#right a:hover{
+	color:#85a157;
+}
+/********************** Footer ***************************/
+#footerline {
+clear:both;
+background-image:url(images/footer_bg.gif);
+font-size:1px;
+height:10px;
+}
+#footer {
+	width:717px;
+	text-align:center;
+	padding: 20px 0px;
+}

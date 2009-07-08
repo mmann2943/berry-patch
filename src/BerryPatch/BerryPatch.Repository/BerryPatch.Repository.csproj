@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{3C754DC9-DCD6-4532-A6C1-49F6FE2D8F1B}</ProjectGuid>
+    <ProjectGuid>{7DADFBE5-D6E3-4AD8-9640-24EC38C6060F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BerryPatch.Web</RootNamespace>
-    <AssemblyName>BerryPatch.Web</AssemblyName>
+    <RootNamespace>BerryPatch.Repository</RootNamespace>
+    <AssemblyName>BerryPatch.Repository</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -45,8 +45,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="SessionAttribute.cs" />
+    <Compile Include="FailureResult.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RepositoryResult.cs" />
+    <Compile Include="SiteVisitorNotLoggedInException.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

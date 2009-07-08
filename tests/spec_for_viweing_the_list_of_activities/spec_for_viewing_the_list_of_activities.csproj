@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{3C754DC9-DCD6-4532-A6C1-49F6FE2D8F1B}</ProjectGuid>
+    <ProjectGuid>{70EF582A-18B6-47B8-A71D-24CF1049E429}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BerryPatch.Web</RootNamespace>
-    <AssemblyName>BerryPatch.Web</AssemblyName>
+    <RootNamespace>spec_for_viewing_the_list_of_activities</RootNamespace>
+    <AssemblyName>spec_for_viewing_the_list_of_activities</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -31,9 +31,21 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MbUnit.Framework, Version=1.0.2700.29885, Culture=neutral, PublicKeyToken=5e72ecd30bc408d5">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\references\MbUnit.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Rhino.Mocks, Version=3.5.0.1337, Culture=neutral, PublicKeyToken=0b3305902db7183f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\references\Rhino.Mocks.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\references\System.Web.Mvc.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.Linq">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -45,8 +57,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="SessionAttribute.cs" />
+    <Compile Include="when_the_visitor_is_not_logged_in.cs" />
+    <Compile Include="when_the_activity_controller_is_invoked.cs" />
+    <Compile Include="when_a_visitor_views_the_activities.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\BerryPatch\BerryPatch.Activity\BerryPatch.Activity.csproj">
+      <Project>{37CD25DB-9892-46EE-90ED-7E1EB8764FDD}</Project>
+      <Name>BerryPatch.Activity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\BerryPatch\BerryPatch.Visitor\BerryPatch.Visitor.csproj">
+      <Project>{20AAB082-6D60-4105-8179-CBDC1B5E6632}</Project>
+      <Name>BerryPatch.Visitor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\web-site\web-site\web-site.csproj">
+      <Project>{7466C14D-A426-4754-8048-D12790448577}</Project>
+      <Name>web-site</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

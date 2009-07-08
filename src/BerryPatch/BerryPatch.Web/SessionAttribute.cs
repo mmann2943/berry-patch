@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
-namespace NuclearFamily.Web
+namespace BerryPatch.Web
 {
     public enum Expiration
     {
@@ -13,15 +11,16 @@ namespace NuclearFamily.Web
     public class SessionAttribute:Attribute
     {
         private List<string> _itemsInSession;
-        private Expiration _expiration = Expiration.Instance;        
+        private Expiration _expiration = Expiration.Instance;
 
-        public SessionAttribute(object[] itemsInSession, Expiration expiration) : this(itemsInSession)
+        public SessionAttribute(List<string> itemsInSession, Expiration expiration)
+            : this(itemsInSession)
         {
             _itemsInSession = itemsInSession;
             _expiration = expiration;
         }
 
-        public SessionAttribute(object[] itemsInSession)
+        public SessionAttribute(List<string> itemsInSession)
         {
             _itemsInSession = itemsInSession;
         }
