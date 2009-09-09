@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("spec_for_registration_controller")]
+[assembly: AssemblyTitle("spec_for_berry_patch")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("spec_for_registration_controller")]
+[assembly: AssemblyProduct("spec_for_berry_patch")]
 [assembly: AssemblyCopyright("Copyright ©  2009")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("1e0976d7-98a4-4e17-8489-d2400b5d76bb")]
+[assembly: Guid("4f6b44b5-4d0d-4075-884e-b3209738af17")]
 
 // Version information for an assembly consists of the following four values:
 //

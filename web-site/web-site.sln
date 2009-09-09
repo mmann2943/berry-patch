@@ -5,23 +5,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "web-site", "web-site\web-si
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{5FCC08D7-8A55-4C74-8AD7-2054105BD8F9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "spec_for_registration", "..\tests\spec_for_registration\spec_for_registration.csproj", "{332CF6BF-0F68-4962-95BA-605C58E7AEC5}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "spec_for_signing_up_for_activities", "..\tests\sec_for_signing_up_for_activities\spec_for_signing_up_for_activities.csproj", "{E0DAF35C-638F-4121-92B9-936225071D1B}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{8E725CC4-7161-4A25-B29A-17D5FDBE75C4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BerryPatch.Web", "..\src\BerryPatch\BerryPatch.Web\BerryPatch.Web.csproj", "{3C754DC9-DCD6-4532-A6C1-49F6FE2D8F1B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BerryPatch.Repository", "..\src\BerryPatch\BerryPatch.Repository\BerryPatch.Repository.csproj", "{7DADFBE5-D6E3-4AD8-9640-24EC38C6060F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "spec_for_viewing_the_list_of_activities", "..\tests\spec_for_viweing_the_list_of_activities\spec_for_viewing_the_list_of_activities.csproj", "{70EF582A-18B6-47B8-A71D-24CF1049E429}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestHelper", "..\tests\TestHelper\TestHelper.csproj", "{1E8F3872-3001-4673-92C2-A65E99687C58}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "spec_for_registration_controller", "..\tests\spec_for_registration_controller\spec_for_registration_controller.csproj", "{9C40CD3D-C183-4BEE-BD39-A3E206954663}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "spec_for_logging_in", "..\tests\spec_for_logging_in\spec_for_logging_in.csproj", "{489DB557-67CF-4774-89B4-CB373FB82CCB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "spec_for_berry_patch", "..\tests\spec_for_berry_patch\spec_for_berry_patch.csproj", "{D146F27B-5F79-4C58-A529-FE9F2944AA48}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,14 +25,6 @@ Global
 		{7466C14D-A426-4754-8048-D12790448577}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7466C14D-A426-4754-8048-D12790448577}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7466C14D-A426-4754-8048-D12790448577}.Release|Any CPU.Build.0 = Release|Any CPU
-		{332CF6BF-0F68-4962-95BA-605C58E7AEC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{332CF6BF-0F68-4962-95BA-605C58E7AEC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{332CF6BF-0F68-4962-95BA-605C58E7AEC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{332CF6BF-0F68-4962-95BA-605C58E7AEC5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E0DAF35C-638F-4121-92B9-936225071D1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E0DAF35C-638F-4121-92B9-936225071D1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E0DAF35C-638F-4121-92B9-936225071D1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E0DAF35C-638F-4121-92B9-936225071D1B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3C754DC9-DCD6-4532-A6C1-49F6FE2D8F1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3C754DC9-DCD6-4532-A6C1-49F6FE2D8F1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C754DC9-DCD6-4532-A6C1-49F6FE2D8F1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -49,33 +33,21 @@ Global
 		{7DADFBE5-D6E3-4AD8-9640-24EC38C6060F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7DADFBE5-D6E3-4AD8-9640-24EC38C6060F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7DADFBE5-D6E3-4AD8-9640-24EC38C6060F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{70EF582A-18B6-47B8-A71D-24CF1049E429}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{70EF582A-18B6-47B8-A71D-24CF1049E429}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{70EF582A-18B6-47B8-A71D-24CF1049E429}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{70EF582A-18B6-47B8-A71D-24CF1049E429}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1E8F3872-3001-4673-92C2-A65E99687C58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1E8F3872-3001-4673-92C2-A65E99687C58}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1E8F3872-3001-4673-92C2-A65E99687C58}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1E8F3872-3001-4673-92C2-A65E99687C58}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9C40CD3D-C183-4BEE-BD39-A3E206954663}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9C40CD3D-C183-4BEE-BD39-A3E206954663}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9C40CD3D-C183-4BEE-BD39-A3E206954663}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9C40CD3D-C183-4BEE-BD39-A3E206954663}.Release|Any CPU.Build.0 = Release|Any CPU
-		{489DB557-67CF-4774-89B4-CB373FB82CCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{489DB557-67CF-4774-89B4-CB373FB82CCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{489DB557-67CF-4774-89B4-CB373FB82CCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{489DB557-67CF-4774-89B4-CB373FB82CCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D146F27B-5F79-4C58-A529-FE9F2944AA48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D146F27B-5F79-4C58-A529-FE9F2944AA48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D146F27B-5F79-4C58-A529-FE9F2944AA48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D146F27B-5F79-4C58-A529-FE9F2944AA48}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{332CF6BF-0F68-4962-95BA-605C58E7AEC5} = {5FCC08D7-8A55-4C74-8AD7-2054105BD8F9}
-		{E0DAF35C-638F-4121-92B9-936225071D1B} = {5FCC08D7-8A55-4C74-8AD7-2054105BD8F9}
-		{70EF582A-18B6-47B8-A71D-24CF1049E429} = {5FCC08D7-8A55-4C74-8AD7-2054105BD8F9}
 		{1E8F3872-3001-4673-92C2-A65E99687C58} = {5FCC08D7-8A55-4C74-8AD7-2054105BD8F9}
-		{9C40CD3D-C183-4BEE-BD39-A3E206954663} = {5FCC08D7-8A55-4C74-8AD7-2054105BD8F9}
-		{489DB557-67CF-4774-89B4-CB373FB82CCB} = {5FCC08D7-8A55-4C74-8AD7-2054105BD8F9}
+		{D146F27B-5F79-4C58-A529-FE9F2944AA48} = {5FCC08D7-8A55-4C74-8AD7-2054105BD8F9}
 		{3C754DC9-DCD6-4532-A6C1-49F6FE2D8F1B} = {8E725CC4-7161-4A25-B29A-17D5FDBE75C4}
 		{7DADFBE5-D6E3-4AD8-9640-24EC38C6060F} = {8E725CC4-7161-4A25-B29A-17D5FDBE75C4}
 	EndGlobalSection
