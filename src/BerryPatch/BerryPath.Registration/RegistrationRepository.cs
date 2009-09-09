@@ -12,7 +12,7 @@ namespace BerryPath.Registration
             this.registrationService = registrationService;
         }
 
-        public void Register(SiteVisitor visitor)
+        public virtual void Register(SiteVisitor visitor)
         {
             if (!registrationService.IsExisingFamilyMember(visitor))
                 throw new NonExistingFamilyMemberException();

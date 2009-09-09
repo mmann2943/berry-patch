@@ -11,17 +11,17 @@
 
 <body>
     <div id="container">
-	<div id="header">		
+	<div id="header">
 		<ul>
 			<li><a href="/">Home</a></li>
-			<li><a href="http://www.freewebsitetemplates.com">Activities</a></li>			
-			<li><a href="http://www.freewebsitetemplates.com">Sign In</a></li>
+			<li><a href="/Activity/SelectActivities">Activities</a></li>			
+			<li><a href="/Login">Sign In</a></li>
 			<li><a href="mailto:billberry.alabama@gmail.com">Contact us</a></li>
 		</ul>
 	</div>
-	<asp:ContentPlaceHolder ID="content" runat="server" />
+	<asp:ContentPlaceHolder ID="MainContent" runat="server" />	
    	<div id="footerline"></div>		
 	<div id="footer">Copyright © 2009 Berry Patch.  All rights reserved.</div>
-   </div>
+   </div>   
 </body>
 </html>

@@ -1,12 +1,12 @@
 <%@ Page Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage" %>
-<asp:Content ID="content" ContentPlaceHolderID="content" runat="server">
-     <script type="text/javascript"> 
-        <!--
-        $(function() {
-	        $('#photos a').flyout();	       
-        });
-        --> 
-        </script> 
+<asp:Content ID="ContentId" ContentPlaceHolderID="MainContent" runat="server">
+	    	    <script type="text/javascript"> 
+		    <!--
+	        	$(function() {
+		            $('#photos a').flyout();
+	        	});
+        	    --> 
+                    </script>
 	    <div id="left">
 		    <h1>Welcome to Berry-Patch.net!</h1>
     		
@@ -17,7 +17,7 @@
 		    <div id="photos">
 		        <a href="/images/GrandmotherBerryAndDaughters.jpg" title="what ever image"><img src="/images/GrandmotherBerryAndDaughtersThumbnail.png" alt="photo" /></a>
 		        <a href="/images/FirstCousins1948.jpg"><img src="/images/FirstCousins1948Thumbnail.png" alt="photo" /></a>
-		        <a href="/images/TheBeepBeepCar1960s.jpg"><img src="/images/TheBeepBeepCar1960sThumbNail.png" alt="photo" /></a>		      
+		        <a href="/images/TheBeepBeepCar1960s.jpg"><img src="/images/TheBeepBeepCar1960sThumbnail.png" alt="photo" /></a>		      
 		    </div>
 	    </div>
 	    <div id="right">
@@ -28,5 +28,5 @@
 		    <p>If you're looking for beautiful and professionally made templates you can find them at Template Beauty.</p>
 		    <a href="http://www.freewebsitetemplates.com/forum/">The forum</a>
 		    <p>If you're having problems editing the template please don't hesitate to ask for help on the forum.</p>
-	    </div>	
+	    </div>
 </asp:Content>

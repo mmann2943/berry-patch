@@ -1,5 +1,4 @@
 using System;
-using System.Security.Principal;
 using System.Web.Mvc;
 using BerryPatch.Activity;
 using BerryPatch.MVC.Models;
@@ -19,6 +18,11 @@ namespace web_site.Controllers
             this.repository = repository;
         }
 
+        public ActivityController() : this(new ActivityRepository())
+        {
+              
+        }
+
 
         [Authorize]
         [AcceptVerbs(HttpVerbs.Post)]
@@ -31,24 +35,14 @@ namespace web_site.Controllers
             return View(model);
         }
 
-        public ActionResult ShowActivities(SiteVisitor visitor)
-        {
-            return View(new ShowActivitiesModel(repository.GetActivities(), visitor));
-        }
-    }
+        //public ActionResult SelectActivities(SiteVisitor visitor)
+        //{
+        //    return View(new ShowActivitiesModel(repository.GetActivities(), visitor));
+        //}
 
-    public class Visitor: SiteVisitor
-    {
-        private readonly IPrincipal userPrincipal;
-
-        public Visitor(IPrincipal userPrincipal)
+        public ActionResult SelectActivities()
         {
-            this.userPrincipal = userPrincipal;            
-        }
-
-        public bool IsLoggedIn
-        {
-            get { return userPrincipal.Identity.IsAuthenticated; }
+            return View();
         }
     }
 

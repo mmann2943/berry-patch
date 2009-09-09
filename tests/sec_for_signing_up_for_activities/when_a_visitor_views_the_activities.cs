@@ -22,7 +22,7 @@ namespace spec_for_signing_up_for_activities
             var controller = new ActivityController(repository);
 
             var visitor = MockRepository.GenerateStub<SiteVisitor>();
-            var viewResult = controller.ShowActivities(visitor) as ViewResult;
+            var viewResult = controller.SelectActivities() as ViewResult;
             model = viewResult.ViewData.Model as ShowActivitiesModel;
         }
 

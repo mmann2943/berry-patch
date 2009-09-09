@@ -22,8 +22,8 @@ namespace spec_for_viewing_the_list_of_activities
             var controller = new ActivityController(repository);
 
             var visitor = MockRepository.GenerateStub<SiteVisitor>();            
-            var viewResult = controller.ShowActivities(visitor) as ViewResult;
-            model = viewResult.ViewData.Model as ShowActivitiesModel;
+            //var viewResult = controller.SelectActivities(visitor) as ViewResult;
+            //model = viewResult.ViewData.Model as ShowActivitiesModel;
         }
 
         public virtual void observe()

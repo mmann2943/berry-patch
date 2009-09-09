@@ -43,6 +43,7 @@
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
+    <Reference Include="System.Web.Mvc, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Xml.Linq">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
@@ -53,7 +54,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="when_a_site_visitor_supplies_an_invalid_email_address.cs" />
+    <Compile Include="when_a_site_visitor_exists_in_the_repository.cs" />
+    <Compile Include="when_a_site_visitor_attempts_to_register.cs" />
+    <Compile Include="when_a_site_visitor_does_not_exist_in_the_repository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -72,6 +75,10 @@
     <ProjectReference Include="..\..\src\BerryPatch\BerryPath.Registration\BerryPath.Registration.csproj">
       <Project>{3FB4885C-E158-46A2-A159-72301BEC9570}</Project>
       <Name>BerryPath.Registration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\web-site\web-site\web-site.csproj">
+      <Project>{7466C14D-A426-4754-8048-D12790448577}</Project>
+      <Name>web-site</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
