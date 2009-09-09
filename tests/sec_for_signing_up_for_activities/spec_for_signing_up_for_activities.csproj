@@ -82,6 +82,10 @@
       <Project>{7466C14D-A426-4754-8048-D12790448577}</Project>
       <Name>web-site</Name>
     </ProjectReference>
+    <ProjectReference Include="..\TestHelper\TestHelper.csproj">
+      <Project>{1E8F3872-3001-4673-92C2-A65E99687C58}</Project>
+      <Name>TestHelper</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
