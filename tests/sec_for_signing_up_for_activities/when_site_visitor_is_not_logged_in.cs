@@ -1,4 +1,4 @@
-﻿using BerryPatch.Repository;
+﻿using BerryPatch.Repository.Security;
 using MbUnit.Framework;
 using Rhino.Mocks;
 

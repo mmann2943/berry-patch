@@ -1,7 +1,8 @@
 ﻿using System.Web.Mvc;
 using BerryPatch.Activity;
 using BerryPatch.MVC.Models;
-using BerryPatch.Visitor;
+using BerryPatch.Repository.Activity;
+using BerryPatch.Repository.Security;
 using MbUnit.Framework;
 using Rhino.Mocks;
 using web_site.Controllers;
@@ -19,11 +20,9 @@ namespace spec_for_viewing_the_list_of_activities
         {
             repository = MockRepository.GenerateStub<ActivityRepository>();
             repository.Stub(x => x.GetActivities()).Return(new Activities());
-            var controller = new ActivityController(repository);
-
-            var visitor = MockRepository.GenerateStub<SiteVisitor>();            
-            //var viewResult = controller.SelectActivities(visitor) as ViewResult;
-            //model = viewResult.ViewData.Model as ShowActivitiesModel;
+            var controller = new ActivityController(repository);            
+            var viewResult = controller.SelectActivities() as ViewResult;
+            model = viewResult.ViewData.Model as ShowActivitiesModel;
         }
 
         public virtual void observe()

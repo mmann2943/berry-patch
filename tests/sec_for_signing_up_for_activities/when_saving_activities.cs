@@ -1,7 +1,8 @@
 ﻿using System.Web.Mvc;
 using BerryPatch.Activity;
 using BerryPatch.MVC.Models;
-using BerryPatch.Visitor;
+using BerryPatch.Repository.Activity;
+using BerryPatch.Repository.Security;
 using MbUnit.Framework;
 using Rhino.Mocks;
 using web_site.Controllers;

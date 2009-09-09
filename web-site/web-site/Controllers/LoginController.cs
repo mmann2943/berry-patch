@@ -1,10 +1,7 @@
-using System.Security.Cryptography;
-using System.Text;
 using System.Web.Mvc;
-using Autofac.Integration.Web;
 using BerryPatch.Repository;
-using BerryPatch.ViewModel;
-using BerryPatch.Visitor;
+using BerryPatch.Repository.Security;
+using BerryPatch.Web;
 using web_site;
 
 namespace BerryPatch.MVC.Controllers
@@ -29,29 +26,17 @@ namespace BerryPatch.MVC.Controllers
         {
             var crypto = MvcApplication.Resolve<ICryptoHelper>();
             var md5Password = crypto.Encrypt(password);
-            var visitor = repository.Find(x => x.EmailAddress == emailAddress &&
-                                               x.Password == md5Password)[0];
-            
+            var visitorList = repository.Find(x => x.EmailAddress == emailAddress &&
+                                               x.Password == md5Password);
+                        
+            if (visitorList == null ||
+                visitorList.Count == 0)
+                return View(new FailureResult(new NonExistingFamilyMemberException()));
+                
             return View("WhatCanIDo", new VisitorViewModel()
                                    {
-                                       Name = visitor.FirstName
+                                       Name = visitorList[0].FirstName
                                    });
         }
-    }
-
-    public class MD5Helper: ICryptoHelper
-    {
-        public string Encrypt(string password)
-        {
-            var md5 = new MD5CryptoServiceProvider();
-            var encoding = new UTF8Encoding();
-            var bytes = encoding.GetBytes(password);
-            return encoding.GetString(md5.ComputeHash(bytes));
-        }
-    }
-
-    public interface ICryptoHelper
-    {
-        string Encrypt(string stringToencrypt);
     }
 }

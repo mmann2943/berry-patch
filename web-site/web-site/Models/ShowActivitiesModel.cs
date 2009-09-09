@@ -1,13 +1,11 @@
-﻿using BerryPatch.Activity;
-using BerryPatch.Visitor;
+﻿using BerryPatch.Repository.Activity;
 
 namespace BerryPatch.MVC.Models
 {
     public class ShowActivitiesModel
     {
-        public ShowActivitiesModel(Activities activities, SiteVisitor visitor)
-        {
-            ShowSaveButton = visitor.IsLoggedIn;
+        public ShowActivitiesModel(Activities activities)
+        {            
             ListOfActivities = activities;
         }
 

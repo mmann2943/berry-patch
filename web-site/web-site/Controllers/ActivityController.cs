@@ -1,10 +1,9 @@
-using System;
 using System.Web.Mvc;
 using BerryPatch.Activity;
 using BerryPatch.MVC.Models;
 using BerryPatch.Repository;
-using BerryPatch.Visitor;
-using Activities=BerryPatch.Activity.Activities;
+using BerryPatch.Repository.Security;
+using Activities=BerryPatch.Repository.Activity.Activities;
 
 namespace web_site.Controllers
 {
@@ -33,16 +32,11 @@ namespace web_site.Controllers
             var model = new SaveActivitiesViewModel(result);
             
             return View(model);
-        }
-
-        //public ActionResult SelectActivities(SiteVisitor visitor)
-        //{
-        //    return View(new ShowActivitiesModel(repository.GetActivities(), visitor));
-        //}
+        }        
 
         public ActionResult SelectActivities()
         {
-            return View();
+            return View(new ShowActivitiesModel(repository.GetActivities()));
         }
     }
 

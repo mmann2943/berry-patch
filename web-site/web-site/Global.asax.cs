@@ -8,6 +8,7 @@ using Autofac.Integration.Web;
 using Autofac.Integration.Web.Mvc;
 using BerryPatch.MVC.Controllers;
 using BerryPatch.Repository;
+using BerryPatch.Web;
 
 namespace web_site
 {
@@ -15,7 +16,8 @@ namespace web_site
     // visit http://go.microsoft.com/?LinkId=9394801
 
     public class MvcApplication : System.Web.HttpApplication, IContainerProviderAccessor
-    {        
+    {
+        private static IContainerResolver containerProvider;
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
@@ -32,25 +34,18 @@ namespace web_site
                 new { controller = "Home", action = "Index", id = "" }  // Parameter defaults
             );        
         }
-
-        static IContainerProvider _containerProvider;
-        private static IContainer _container;
-
+        
         protected void Application_Start()
-        {
-            var builder = new ContainerBuilder();
-            builder.Register<VisitorRepository>().As<IRepository<Visitor>>().SingletonScoped();
-            builder.Register<MD5Helper>().As<ICryptoHelper>().SingletonScoped();
-
-            builder.RegisterModule(new AutofacControllerModule(Assembly.GetExecutingAssembly()));
-
-            _container = builder.Build();
-            _containerProvider = new ContainerProvider(_container);
-            
-
-            ControllerBuilder.Current.SetControllerFactory(new AutofacControllerFactory(ContainerProvider));
+        {        
             RegisterRoutes(RouteTable.Routes);
+            InitializeContainer(new WebSiteContainer());
         }
+
+        public static void InitializeContainer(IContainerResolver container)
+        {
+            containerProvider = container;
+        }
+
 
         protected void Application_BeginRequest()
         {
@@ -59,16 +54,17 @@ namespace web_site
         }
         protected void Application_EndRequest(object sender, EventArgs e)
         {
-            ContainerProvider.DisposeRequestContainer();
-        }
-        public IContainerProvider ContainerProvider
-        {
-            get { return _containerProvider; }
+            containerProvider.Dispose();
         }
 
         public static TService Resolve<TService>()
         {
-            return _container.Resolve<TService>();
+            return containerProvider.Resolve<TService>(containerProvider.GetContainer());
+        }
+
+        public IContainerProvider ContainerProvider
+        {
+            get { return containerProvider.GetContainerProvider(); }
         }
     }
 }

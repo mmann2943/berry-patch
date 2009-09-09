@@ -1,9 +1,11 @@
 ﻿using System.Web.Mvc;
 using BerryPatch.Activity;
 using BerryPatch.MVC.Models;
-using BerryPatch.Visitor;
+using BerryPatch.Repository.Activity;
 using MbUnit.Framework;
 using Rhino.Mocks;
+using TestHelper;
+using web_site;
 using web_site.Controllers;
 
 namespace spec_for_signing_up_for_activities
@@ -17,11 +19,11 @@ namespace spec_for_signing_up_for_activities
         [SetUp]
         public void context()
         {
+            MvcApplication.InitializeContainer(new TestContainer());
             repository = MockRepository.GenerateStub<ActivityRepository>();
             repository.Stub(x => x.GetActivities()).Return(new Activities());
             var controller = new ActivityController(repository);
-
-            var visitor = MockRepository.GenerateStub<SiteVisitor>();
+            
             var viewResult = controller.SelectActivities() as ViewResult;
             model = viewResult.ViewData.Model as ShowActivitiesModel;
         }

@@ -31,6 +31,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Autofac, Version=1.4.4.561, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\references\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="Autofac.Integration.Web, Version=1.4.4.561, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\references\Autofac.Integration.Web.dll</HintPath>
+    </Reference>
     <Reference Include="MbUnit.Framework, Version=1.0.2700.29885, Culture=neutral, PublicKeyToken=5e72ecd30bc408d5">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\references\MbUnit.Framework.dll</HintPath>
@@ -43,6 +51,7 @@
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
+    <Reference Include="System.Web" />
     <Reference Include="System.Web.Mvc, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Xml.Linq">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -61,17 +70,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\src\BerryPatch\BerryPatch.Activity\BerryPatch.Activity.csproj">
-      <Project>{37CD25DB-9892-46EE-90ED-7E1EB8764FDD}</Project>
-      <Name>BerryPatch.Activity</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\src\BerryPatch\BerryPatch.Repository\BerryPatch.Repository.csproj">
       <Project>{7DADFBE5-D6E3-4AD8-9640-24EC38C6060F}</Project>
       <Name>BerryPatch.Repository</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\src\BerryPatch\BerryPatch.Visitor\BerryPatch.Visitor.csproj">
-      <Project>{20AAB082-6D60-4105-8179-CBDC1B5E6632}</Project>
-      <Name>BerryPatch.Visitor</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\src\BerryPatch\BerryPatch.Web\BerryPatch.Web.csproj">
       <Project>{3C754DC9-DCD6-4532-A6C1-49F6FE2D8F1B}</Project>

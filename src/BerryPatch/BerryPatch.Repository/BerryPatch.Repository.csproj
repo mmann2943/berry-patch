@@ -48,6 +48,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Activity\Activities.cs" />
+    <Compile Include="Activity\Activity.cs" />
+    <Compile Include="Activity\ActivityRepository.cs" />
+    <Compile Include="NonExistingFamilyMemberException.cs" />
+    <Compile Include="Security\RegistrationRepository.cs" />
+    <Compile Include="Security\RegistrationService.cs" />
     <Compile Include="T4Helpers\T4PropertyNameHelper.cs" />
     <Compile Include="FailureResult.cs" />
     <Compile Include="IRepository.cs" />
@@ -58,20 +64,16 @@
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
     <Compile Include="RepositoryResult.cs" />
-    <Compile Include="SiteVisitorNotLoggedInException.cs" />
-    <Compile Include="Visitor.designer.cs">
+    <Compile Include="Security\SiteVisitor.cs" />
+    <Compile Include="Security\SiteVisitorNotLoggedInException.cs" />
+    <Compile Include="Security\Visitor.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Visitor.dbml</DependentUpon>
     </Compile>
-    <Compile Include="VisitorMethods.cs" />
-    <Compile Include="VisitorRepository.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\BerryPatch.Visitor\BerryPatch.Visitor.csproj">
-      <Project>{20AAB082-6D60-4105-8179-CBDC1B5E6632}</Project>
-      <Name>BerryPatch.Visitor</Name>
-    </ProjectReference>
+    <Compile Include="Security\VisitorMethods.cs" />
+    <Compile Include="Security\VisitorRepository.cs" />
+    <Compile Include="Security\VisitorViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
@@ -86,14 +88,14 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="L2ST4.ttinclude" />
-    <None Include="Visitor.dbml">
+    <None Include="Security\Visitor.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
       <LastGenOutput>Visitor.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Visitor.dbml.layout">
+    <None Include="Security\Visitor.dbml.layout">
       <DependentUpon>Visitor.dbml</DependentUpon>
     </None>
   </ItemGroup>

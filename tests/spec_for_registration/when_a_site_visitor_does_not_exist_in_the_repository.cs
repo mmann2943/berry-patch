@@ -1,4 +1,4 @@
-﻿using BerryPatch.Exceptions;
+﻿using BerryPatch.Repository;
 using MbUnit.Framework;
 using Rhino.Mocks;
 

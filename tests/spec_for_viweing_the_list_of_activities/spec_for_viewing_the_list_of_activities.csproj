@@ -60,13 +60,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\src\BerryPatch\BerryPatch.Activity\BerryPatch.Activity.csproj">
-      <Project>{37CD25DB-9892-46EE-90ED-7E1EB8764FDD}</Project>
-      <Name>BerryPatch.Activity</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\src\BerryPatch\BerryPatch.Visitor\BerryPatch.Visitor.csproj">
-      <Project>{20AAB082-6D60-4105-8179-CBDC1B5E6632}</Project>
-      <Name>BerryPatch.Visitor</Name>
+    <ProjectReference Include="..\..\src\BerryPatch\BerryPatch.Repository\BerryPatch.Repository.csproj">
+      <Project>{7DADFBE5-D6E3-4AD8-9640-24EC38C6060F}</Project>
+      <Name>BerryPatch.Repository</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\web-site\web-site\web-site.csproj">
       <Project>{7466C14D-A426-4754-8048-D12790448577}</Project>

@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using System.Security.Principal;
 using BerryPatch.MVC.Controllers;
 using BerryPatch.Repository;
-using BerryPatch.Visitor;
+using BerryPatch.Repository.Security;
 using MbUnit.Framework;
 using Rhino.Mocks;
+using TestHelper;
+using web_site;
 
 namespace spec_for_logging_in
 {
@@ -21,6 +23,8 @@ namespace spec_for_logging_in
         [SetUp]
         public void context()
         {
+            MvcApplication.InitializeContainer(new TestContainer());
+            
             var principal = MockRepository.GenerateStub<IPrincipal>();
             var visitor = MockRepository.GenerateStub<SiteVisitor>();
             visitor.Stub(x => x.FirstName).Return("Michael");

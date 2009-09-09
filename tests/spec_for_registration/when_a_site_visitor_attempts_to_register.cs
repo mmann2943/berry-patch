@@ -1,5 +1,4 @@
-﻿using BerryPatch.Visitor;
-using BerryPath.Registration;
+﻿using BerryPatch.Repository.Security;
 using MbUnit.Framework;
 using Rhino.Mocks;
 
@@ -16,8 +15,8 @@ namespace spec_for_registration
         public void context()
         {
             siteVisitor = MockRepository.GenerateStub<SiteVisitor>();
-            registrationService = MockRepository.GenerateStub<RegistrationService>();            
-            registrationRepository = MockRepository.GenerateStub<RegistrationRepository>(registrationService);
+            registrationService = MockRepository.GenerateStub<RegistrationService>();
+            registrationRepository = new RegistrationRepository(registrationService);
 
             observe();
         }

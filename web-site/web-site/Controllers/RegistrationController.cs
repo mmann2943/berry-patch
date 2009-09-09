@@ -1,8 +1,7 @@
 using System;
 using System.Web.Mvc;
 using BerryPatch.Repository;
-using BerryPatch.Visitor;
-using BerryPath.Registration;
+using BerryPatch.Repository.Security;
 
 namespace BerryPatch.MVC.Controllers
 {
