@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestHelper", "..\tests\Test
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "spec_for_berry_patch", "..\tests\spec_for_berry_patch\spec_for_berry_patch.csproj", "{D146F27B-5F79-4C58-A529-FE9F2944AA48}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "..\src\BerryPatch\Services\Services.csproj", "{DBCB0DDA-076A-4703-8024-277CEA0BEDD3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +43,10 @@ Global
 		{D146F27B-5F79-4C58-A529-FE9F2944AA48}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D146F27B-5F79-4C58-A529-FE9F2944AA48}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D146F27B-5F79-4C58-A529-FE9F2944AA48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBCB0DDA-076A-4703-8024-277CEA0BEDD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBCB0DDA-076A-4703-8024-277CEA0BEDD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBCB0DDA-076A-4703-8024-277CEA0BEDD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBCB0DDA-076A-4703-8024-277CEA0BEDD3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -50,5 +56,6 @@ Global
 		{D146F27B-5F79-4C58-A529-FE9F2944AA48} = {5FCC08D7-8A55-4C74-8AD7-2054105BD8F9}
 		{3C754DC9-DCD6-4532-A6C1-49F6FE2D8F1B} = {8E725CC4-7161-4A25-B29A-17D5FDBE75C4}
 		{7DADFBE5-D6E3-4AD8-9640-24EC38C6060F} = {8E725CC4-7161-4A25-B29A-17D5FDBE75C4}
+		{DBCB0DDA-076A-4703-8024-277CEA0BEDD3} = {8E725CC4-7161-4A25-B29A-17D5FDBE75C4}
 	EndGlobalSection
 EndGlobal

@@ -84,7 +84,7 @@ label {
 /********************** Header ***************************/
 #header {
 	margin: 0px 0px 0px 0px;
-	background-image:url('/images/banner.png');
+	background-image:url('../images/banner.png');
 	width:717px;
 	height:288px;
 	position:relative;

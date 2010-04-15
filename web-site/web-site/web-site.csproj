@@ -64,9 +64,13 @@
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\RegistrationModel.cs" />
     <Compile Include="Models\SaveActivitiesViewModel.cs" />
     <Compile Include="Models\ShowActivitiesModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -115,6 +119,10 @@
       <Project>{3C754DC9-DCD6-4532-A6C1-49F6FE2D8F1B}</Project>
       <Name>BerryPatch.Web</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\src\BerryPatch\Services\Services.csproj">
+      <Project>{DBCB0DDA-076A-4703-8024-277CEA0BEDD3}</Project>
+      <Name>Services</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -132,10 +140,10 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>1047</DevelopmentServerPort>
-          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <DevelopmentServerVPath>/berry-patch</DevelopmentServerVPath>
           <IISUrl>http://localhost/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>

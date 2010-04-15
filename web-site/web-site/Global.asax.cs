@@ -32,18 +32,26 @@ namespace web_site
                 "Default2",                                              // Route name
                 "{controller}/{action}/{id}",                            // URL with parameters
                 new { controller = "Home", action = "Index", id = "" }  // Parameter defaults
-            );        
-        }
-        
-        protected void Application_Start()
-        {        
-            RegisterRoutes(RouteTable.Routes);
-            InitializeContainer(new WebSiteContainer());
+            );            
         }
 
-        public static void InitializeContainer(IContainerResolver container)
+        static IContainerProvider _containerProvider;
+        protected void Application_Start(object sender, EventArgs e)
         {
-            containerProvider = container;
+            var builder = new ContainerBuilder();
+
+            builder.RegisterModule(new AutofacControllerModule(Assembly.GetExecutingAssembly()));
+
+            _containerProvider = new ContainerProvider(builder.Build());
+
+            ControllerBuilder.Current.SetControllerFactory(new AutofacControllerFactory(ContainerProvider));
+
+            RegisterRoutes(RouteTable.Routes);
+        }
+
+        public IContainerProvider ContainerProvider
+        {
+            get { return _containerProvider; }
         }
 
 
@@ -54,7 +62,7 @@ namespace web_site
         }
         protected void Application_EndRequest(object sender, EventArgs e)
         {
-            containerProvider.Dispose();
+            ContainerProvider.DisposeRequestContainer();
         }
 
         public static TService Resolve<TService>()
@@ -62,9 +70,13 @@ namespace web_site
             return containerProvider.Resolve<TService>(containerProvider.GetContainer());
         }
 
-        public IContainerProvider ContainerProvider
+        public static readonly object lockObject = new object();
+        public static void InitializeContainer(IContainerResolver containerResolver)
         {
-            get { return containerProvider.GetContainerProvider(); }
-        }
+            lock (lockObject)
+            {
+                containerProvider = containerResolver;
+            }            
+        }        
     }
 }

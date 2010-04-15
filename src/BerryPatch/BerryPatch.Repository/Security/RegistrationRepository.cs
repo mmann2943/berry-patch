@@ -1,20 +1,13 @@
+using System;
 namespace BerryPatch.Repository.Security
 {
-    public class RegistrationRepository
+    public interface RegistrationRepository
     {
-        private readonly RegistrationService registrationService;
+        void Register(string registrationCode);      
+        bool IsValidRegCode(string registrationCode);
+        void DeactivateRegCode(string RegistrationCode);
+        int NumberOfTimesRegCodeEnteredToday(string registrationCode);
 
-        public RegistrationRepository(RegistrationService registrationService)
-        {
-            this.registrationService = registrationService;
-        }
-
-        public virtual void Register(SiteVisitor visitor)
-        {
-            if (!registrationService.IsExisingFamilyMember(visitor))
-                throw new NonExistingFamilyMemberException();
-
-            registrationService.Register(visitor);
-        }
+        bool PersonalInformationIsValid(string registrationCode, DateTime dateOfBirth, string zipCode);
     }
 }

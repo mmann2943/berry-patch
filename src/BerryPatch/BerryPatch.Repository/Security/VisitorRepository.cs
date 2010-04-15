@@ -42,4 +42,14 @@ namespace BerryPatch.Repository.Security
     {
         public const string DatabaseConnectionString = "blah";
     }
+
+    public class VisitorMap : FluentNHibernate.Mapping.ClassMap<Visitor>
+    {
+        public VisitorMap()
+        {
+            Table("Visitor");
+            Id(x => x.EmailAddress);
+            Map(x => x.EmailAddress);
+        }
+    }
 }

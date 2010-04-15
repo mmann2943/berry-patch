@@ -2,33 +2,50 @@ using System;
 using System.Web.Mvc;
 using BerryPatch.Repository;
 using BerryPatch.Repository.Security;
+using System.Collections;
+using Services;
+using BerryPatch.MVC.Models;
 
 namespace BerryPatch.MVC.Controllers
 {
     public class RegistrationController : Controller
     {        
-        private readonly RegistrationRepository repository;
-        private readonly SiteNavigator siteNavigator;
-
-        public RegistrationController(RegistrationRepository repository, SiteNavigator siteNavigator)
+        private readonly RegistrationRepository _repository;
+        private readonly NotificationService _notificationService;
+        public const int MaximumNumberOfTimesToEnterRegCode = 3;
+        public RegistrationController(RegistrationRepository repository, NotificationService notificationService)
         {     
-            this.repository = repository;
-            this.siteNavigator = siteNavigator;
+            _repository = repository;
+            _notificationService = notificationService;
         }
 
-        public ActionResult Save(SiteVisitor siteVisitor)
+        public ActionResult EnterRegCode(string registrationCode)
         {
-            if (! string.IsNullOrEmpty(siteVisitor.EmailAddress) &&
-                ! string.IsNullOrEmpty(siteVisitor.LastName) &&
-                ! string.IsNullOrEmpty(siteVisitor.FirstName))
-            {
-                repository.Register(siteVisitor);
-                return siteNavigator.Navigate(SiteView.Home);
-            }
 
-            return View(new FailureResult(new RegistrationNotCompleteException()));
+            if (_repository.IsValidRegCode(registrationCode))
+                return View(SiteView.RegistrationPersonalVerification);
+
+            if (_repository.NumberOfTimesRegCodeEnteredToday(registrationCode) > MaximumNumberOfTimesToEnterRegCode)
+            {
+                _repository.DeactivateRegCode(registrationCode);
+                _notificationService.NotifyAdminRegCodeWasDeactivated(registrationCode);
+                return View(SiteView.RegistrationCodeIsDisabled);
+            }
+                
+            ViewData[ViewDataLookupKeys.MessageToDisplay] = MessagesToDisplay.InvalidRegCodeMessage;
+            return View(SiteView.EnterRegistrationCode);
         }
 
+        public ActionResult VerifyPersonalInformation(string registrationCode, DateTime dateOfBirth, string zipCode)
+        {
+            if (_repository.PersonalInformationIsValid(registrationCode, dateOfBirth, zipCode ))
+            {
+                _notificationService.NotifyUserOfSucessfullRegistration(registrationCode, dateOfBirth, zipCode);
+                return View(SiteView.RegistrationSuccess);
+            }
+                
+            return View(SiteView.RegistrationFailure);            
+        }
     }
 
     public class RegistrationNotCompleteException : Exception
@@ -54,5 +71,27 @@ namespace BerryPatch.MVC.Controllers
     public struct SiteView
     {
         public const string Home = "Home";
+        public const string RegistrationPersonalVerification = "VerifyWhoYouAre";
+        public const string EnterRegistrationCode = "EnterRegistrationCode";
+        public const string RegistrationCodeIsDisabled = "DisabledRegCode";
+        public const string RegistrationSuccess = "RegistrationSuccess";
+        public const string RegistrationFailure = "RegistrationFailure";
+        public const string ChangePassword = "ChangePassword";
+    }
+
+    public struct MessagesToDisplay
+    {
+        public const string InvalidRegCodeMessage = "The registration code entered is either invalid or already registered.  Please try again.";
+    }
+
+    public struct ViewDataLookupKeys
+    {
+        public const string MessageToDisplay = "Message";
+    }
+
+    public class PersonalInformationModel
+    {
+        public DateTime DateOfBirth;
+        public string ZipCode;
     }
 }

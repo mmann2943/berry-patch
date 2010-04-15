@@ -1,29 +1,36 @@
 ﻿using BerryPatch.Repository.Security;
 using MbUnit.Framework;
 using Rhino.Mocks;
+using BerryPatch.MVC.Controllers;
+using System.Web.Mvc;
+using Services;
 
 namespace spec_for_registration
 {
     [TestFixture]
     public class when_a_site_visitor_attempts_to_register
-    {
-        protected SiteVisitor siteVisitor;
-        protected RegistrationService registrationService;
+    {        
         protected RegistrationRepository registrationRepository;
+        protected NotificationService notificationService;        
+        protected const string RegistrationCode = "H23456";
+        protected ActionResult actionResult;
 
         [SetUp]
         public void context()
-        {
-            siteVisitor = MockRepository.GenerateStub<SiteVisitor>();
-            registrationService = MockRepository.GenerateStub<RegistrationService>();
-            registrationRepository = new RegistrationRepository(registrationService);
+        {     
+            registrationRepository = MockRepository.GenerateStub<RegistrationRepository>();
+            notificationService = MockRepository.GenerateStub<NotificationService>();
+
+            var controller = new RegistrationController(registrationRepository, notificationService);
 
             observe();
+
+            actionResult = controller.EnterRegCode(RegistrationCode);                       
         }
 
         public virtual void observe()
         {
-            registrationService.Stub(x => x.IsExisingFamilyMember(siteVisitor)).Return(true);
+            
         }
     }
 }

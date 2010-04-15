@@ -13,4 +13,16 @@ namespace BerryPatch.Repository
             }
         }
     }
+
+    public class InvalidRegistrationCodeException : ApplicationException
+    {
+        public static string StaticMessage = "Sorry, but the registration code used is not valid or is already registered.  Please try again.";
+        public override string Message
+        {
+            get
+            {
+                return StaticMessage;
+            }
+        }
+    }
 }

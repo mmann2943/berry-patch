@@ -1,12 +1,5 @@
 <%@ Page Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage" %>
-<asp:Content ID="ContentId" ContentPlaceHolderID="MainContent" runat="server">
-	    	    <script type="text/javascript"> 
-		    <!--
-	        	$(function() {
-		            $('#photos a').flyout();
-	        	});
-        	    --> 
-                    </script>
+<asp:Content ID="ContentId" ContentPlaceHolderID="MainContent" runat="server">        
 	    <div id="left">
 		    <h1>Welcome to Berry-Patch.net!</h1>
     		
@@ -15,9 +8,9 @@
             <p>Log on to Berry-Patch.net often as it develops during the months leading up to the 2010 reunion.  We welcome your suggestions, and we encourage you to become an active participant.</p>            
 		    <h1>Photos</h1>		    
 		    <div id="photos">
-		        <a href="/images/GrandmotherBerryAndDaughters.jpg" title="what ever image"><img src="/images/GrandmotherBerryAndDaughtersThumbnail.png" alt="photo" /></a>
-		        <a href="/images/FirstCousins1948.jpg"><img src="/images/FirstCousins1948Thumbnail.png" alt="photo" /></a>
-		        <a href="/images/TheBeepBeepCar1960s.jpg"><img src="/images/TheBeepBeepCar1960sThumbnail.png" alt="photo" /></a>		      
+		        <a href="../../images/GrandmotherBerryAndDaughters.jpg" title="what ever image"><img src="/images/GrandmotherBerryAndDaughtersThumbnail.png" alt="photo" /></a>
+		        <a href="../../images/FirstCousins1948.jpg"><img src="/images/FirstCousins1948Thumbnail.png" alt="photo" /></a>
+		        <a href="../../images/TheBeepBeepCar1960s.jpg"><img src="/images/TheBeepBeepCar1960sThumbnail.png" alt="photo" /></a>		      
 		    </div>
 	    </div>
 	    <div id="right">
@@ -29,4 +22,13 @@
 		    <a href="http://www.freewebsitetemplates.com/forum/">The forum</a>
 		    <p>If you're having problems editing the template please don't hesitate to ask for help on the forum.</p>
 	    </div>
+	     <script type="text/javascript" language="javascript" src="/scripts/jquery.flyout.js" ></script>
+	     <script type="text/javascript">
+<!--
+           $(function() {
+               $('#photos a').flyout();
+           });
+-->
+        </script>
+	    
 </asp:Content>

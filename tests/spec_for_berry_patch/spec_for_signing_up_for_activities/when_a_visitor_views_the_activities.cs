@@ -19,7 +19,7 @@ namespace spec_for_signing_up_for_activities
         [SetUp]
         public void context()
         {
-            MvcApplication.InitializeContainer(new TestContainer());
+            //MvcApplication.InitializeContainer(new TestContainer());
             repository = MockRepository.GenerateStub<ActivityRepository>();
             repository.Stub(x => x.GetActivities()).Return(new Activities());
             var controller = new ActivityController(repository);
@@ -33,7 +33,7 @@ namespace spec_for_signing_up_for_activities
         {
             repository.AssertWasCalled(x => x.GetActivities());
         }
-
+        
         [Test]
         public void the_controller_should_push_the_activities_into_the_view_model()
         {
